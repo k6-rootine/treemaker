@@ -3,9 +3,9 @@ unit TreeData;
 interface
 
 const 
-    MAX_VERTICAL = 41;
-    MAX_HORIZONTAL = 91;
-    MAX_PHASE = 11;
+    MAX_VERTICAL = 30;
+    MAX_HORIZONTAL = 80;
+    MAX_PHASE = 10;
 
 type 
     TColor = (Red, Green, Blue, Brown);

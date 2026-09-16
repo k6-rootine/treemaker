@@ -1,0 +1,29 @@
+# Free Pascal compiled files
+*.ppu
+*.o
+*.or
+*.a
+*.so
+*.dll
+
+# Executables
+*.exe
+*.out
+
+# Lazarus / Free Pascal generated files
+*.compiled
+*.lps
+*.lpi
+
+# Backup files
+*.bak
+*~
+
+# IDE / build directories
+lib/
+units/
+build/
+bin/
+
+# macOS
+.DS_Store

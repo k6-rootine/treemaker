@@ -514,7 +514,12 @@ begin
             end;
         end;
 
-        WriteLn;
+        { A row is exactly as wide as the terminal (80 columns). On Linux,
+          Crt already wraps to the next line after the last character, so
+          an extra WriteLn would insert a blank line between rows. }
+
+        if WhereX > 1 then
+            WriteLn;
     end;
 
 

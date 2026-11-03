@@ -6,7 +6,7 @@ unit TreeData;
 interface
 
 const 
-    MAX_VERTICAL = 30; //< Nombre de lignes de la grille d'affichage d'une phase.
+    MAX_VERTICAL = 35; //< Nombre de lignes de la grille d'affichage d'une phase.
     MAX_HORIZONTAL = 80; //< Nombre de colonnes de la grille d'affichage d'une phase.
     MAX_PHASE = 10; //< Nombre maximal de phases de croissance pour un arbre.
 

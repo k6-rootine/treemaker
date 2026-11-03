@@ -40,6 +40,9 @@ begin
         White:
             colorToString := 'White';
 
+        MAGENTA:
+            colorToString := 'Magenta';
+
         LIGHT_MAGENTA:
             colorToString := 'Pink';
 
@@ -83,6 +86,11 @@ begin
         color := White;
         stringToColor := True;
     end
+    else if text = 'magenta' then
+    begin
+        color := MAGENTA;
+        stringToColor := True;
+    end
     else if text = 'pink' then
     begin
         color := LIGHT_MAGENTA;
@@ -120,6 +128,9 @@ begin
 
         White:
             colorToConsole := Crt.White;
+
+        MAGENTA:
+            colorToConsole := Crt.Magenta;
 
         LIGHT_MAGENTA:
             colorToConsole := Crt.LightMagenta;
@@ -640,7 +651,7 @@ begin
 
     repeat
         Write(
-            'Color (Red / Green / Blue / Brown / White / Pink / Yellow / Gray): '
+            'Color (Red / Green / Blue / Brown / White / Pink / Magenta / Yellow / Gray): '
         );
 
         ReadLn(colorInput);

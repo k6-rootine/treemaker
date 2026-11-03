@@ -475,7 +475,7 @@ begin
             if (vertical = 1) or
                (vertical = MAX_VERTICAL) then
             begin
-                TextColor(White);
+                TextColor(Crt.White);
                 Write('-');
             end
 
@@ -485,7 +485,7 @@ begin
             else if (horizontal = 1) or
                     (horizontal = MAX_HORIZONTAL) then
             begin
-                TextColor(White);
+                TextColor(Crt.White);
                 Write('|');
             end
 
@@ -518,7 +518,7 @@ begin
     end;
 
 
-    TextColor(White);
+    TextColor(Crt.White);
 end;
 
 
@@ -868,7 +868,7 @@ begin
         speciesName
     );
 
-    setDescription(
+    setTreeDescription(
         tree,
         description
     );
@@ -1055,7 +1055,7 @@ begin
 
     WriteLn(
         'Description: ',
-        getDescription(tree)
+        getTreeDescription(tree)
     );
 
     WriteLn(

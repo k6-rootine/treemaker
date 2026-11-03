@@ -36,6 +36,20 @@ begin
 
         Brown:
             colorToString := 'Brown';
+
+        White:
+            colorToString := 'White';
+
+        LIGHT_MAGENTA:
+            colorToString := 'Pink';
+
+        Yellow:
+            colorToString := 'Yellow';
+
+        LIGHT_GRAY:
+            colorToString := 'Gray';
+        else
+            colorToString := 'White';
     end;
 end;
 
@@ -64,6 +78,26 @@ begin
         color := Brown;
         stringToColor := True;
     end
+    else if text = 'white' then
+    begin
+        color := White;
+        stringToColor := True;
+    end
+    else if text = 'pink' then
+    begin
+        color := LIGHT_MAGENTA;
+        stringToColor := True;
+    end
+    else if text = 'yellow' then
+    begin
+        color := Yellow;
+        stringToColor := True;
+    end
+    else if text = 'gray' then
+    begin
+        color := LIGHT_GRAY;
+        stringToColor := True;
+    end
     else
         stringToColor := False;
 end;
@@ -83,6 +117,20 @@ begin
 
         Brown:
             colorToConsole := 6;
+
+        White:
+            colorToConsole := Crt.White;
+
+        LIGHT_MAGENTA:
+            colorToConsole := Crt.LightMagenta;
+
+        Yellow:
+            colorToConsole := Crt.Yellow;
+
+        LIGHT_GRAY:
+            colorToConsole := Crt.LightGray;
+        else
+            colorToConsole := Crt.White;
     end;
 end;
 
@@ -592,7 +640,7 @@ begin
 
     repeat
         Write(
-            'Color (Red / Green / Blue / Brown): '
+            'Color (Red / Green / Blue / Brown / White / Pink / Yellow / Gray): '
         );
 
         ReadLn(colorInput);
